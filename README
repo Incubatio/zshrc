@@ -1,0 +1,21 @@
+REQUIREMENT:
+~~~~~~~~~~~~
+
+- zsh
+
+
+FEATURES:
+~~~~~~~~~
+
+autocompletion
+extract and compress archive automaticly
+some alias
+nice zsh skin
+
+
+INSTALATION :
+~~~~~~~~~~~~~
+
+put zsrc in ~/
+rename zshrc to .zshrc
+put colorize in /bin/colorize
