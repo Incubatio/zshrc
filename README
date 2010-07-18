@@ -1,12 +1,10 @@
 REQUIREMENT:
 ~~~~~~~~~~~~
-
 - zsh
 
 
 FEATURES:
 ~~~~~~~~~
-
 autocompletion
 extract and compress archive automaticly
 some alias
@@ -15,7 +13,6 @@ colorize the ">>error" output in red
 
 INSTALATION :
 ~~~~~~~~~~~~~
-
 put zsrc in ~/
 rename zshrc to .zshrc
 put colorize in /bin/colorize
