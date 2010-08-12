@@ -16,8 +16,11 @@ alias 'psm=ps -efc -m'
 alias 'psaux=ps aux -c'
 alias 'ls=ls -hG'
 alias 'e2=sudo killall e2fsck'
+alias 'r=rails'
+alias 'dj=python manage.py'
 alias historyf="history -f"
 
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ### Editeurs par defaut ###
 export SVN_EDITOR=vim
@@ -101,13 +104,13 @@ exec 2>>(colorize `tput setaf 1` `tput sgr0` > /dev/tty &)
 autoload -U compinit && compinit 
 
 #Completion
-#zstyle ':completion:*' completer _expand _complete _approximate
-#zstyle ':completion:*:expand:*' tag-order all-expansions
-#zstyle ':completion:*' ignore-parents parent pwd
-#zstyle ':completion:*' list-colors ''
-#zstyle ':completion:*' menu select=1
-#zstyle ':completion:*' original true
-#zstyle ':completion:*:approximate:*' max-errors par 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
+zstyle ':completion:*' completer _expand _complete _approximate
+zstyle ':completion:*:expand:*' tag-order all-expansions
+zstyle ':completion:*' ignore-parents parent pwd
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' original true
+zstyle ':completion:*:approximate:*' max-errors par 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
 
 
 zstyle ':completion:*' list-colors "$LS_COLORS"
@@ -119,7 +122,8 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -A -o pid,%cpu,%mem,comm'
 
 # Menu
-zstyle ':completion:*:*:*' menu yes select
+# to much KikooLol
+# zstyle ':completion:*:*:*' menu yes select
 
 # Options
 zstyle ':completion:*:options'         auto-description '%d'               #
